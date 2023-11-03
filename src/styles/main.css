@@ -1,0 +1,47 @@
+/* #ifdef H5 */
+@import '@unocss/reset/tailwind.css';
+/* #endif */
+
+/* #ifdef MP-WEIXIN */
+page {
+  box-sizing: border-box;
+}
+
+view,
+text,
+button,
+input,
+image,
+video {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: currentcolor;
+}
+
+button {
+  padding: 0;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+button::after {
+  border: none;
+}
+/* #endif */
+
+button.btn[disabled],
+button[btn][disabled] {
+  @apply: text-white! bg-gray-700! opacity-50;
+}
+
+.app {
+  min-height: 100vh;
+  color: #000000;
+  background: #ffffff;
+}
+
+.dark {
+  color: #ffffff;
+  background: #121212;
+}

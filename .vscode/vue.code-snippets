@@ -1,0 +1,29 @@
+{
+  "快速生成 Vue 模板": {
+    "prefix": "setup",
+    "scope": "vue",
+    "body": [
+      "<script setup lang=\"ts\">",
+      "$1",
+      "</script>\n",
+      "<template>",
+      "  <div>$0</div>",
+      "</template>\n"
+    ],
+    "description": "快速生成 Vue 模板"
+  },
+
+  "快速生成 Scss 段落": {
+    "prefix": "style",
+    "scope": "vue",
+    "body": ["<style lang=\"scss\" scoped>", "$2", "</style>\n"],
+    "description": "快速生成 scss 段落"
+  },
+
+  "快速生成 route 段落": {
+    "prefix": "route",
+    "scope": "vue",
+    "body": ["<route lang=\"yaml\">", "style:", "  navigationBarTitleText: $2", "</route>\n"],
+    "description": "快速生成 scss 段落"
+  },
+}
