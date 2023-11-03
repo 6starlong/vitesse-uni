@@ -13,7 +13,7 @@
 
 <br/>
 
-| 本模板相当于 Vitesse 的复刻，主要是为了兼容 [UniAPP](https://uniapp.dcloud.io/) 拥有更好的开发体验。如无跨端需求，建议使用 [Nuxt 3](https://nuxt.com/) 来代替。
+> 本模板相当于 Vitesse 的复刻，主要是为了兼容 [UniAPP](https://uniapp.dcloud.io/) 拥有更好的开发体验。如无跨端需求，建议使用 [Nuxt 3](https://nuxt.com/) 来代替。
 
 ## 特性
 
