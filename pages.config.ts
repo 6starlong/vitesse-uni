@@ -17,8 +17,6 @@ export default defineUniPages({
   easycom: {
     autoscan: true,
     custom: {
-      // https://ext.dcloud.net.cn/plugin?id=55
-      '^uni-(.*)': '@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue',
       // https://ext.dcloud.net.cn/publisher?id=89985
       '^uv-(.*)': '@climblee/uv-ui/components/uv-$1/uv-$1.vue',
     },

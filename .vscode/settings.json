@@ -10,7 +10,7 @@
   "files.associations": {
     "*.css": "postcss"
   },
-  "cSpell.words": ["vitesse", "antfu", "unocss"],
+  "cSpell.words": ["vitesse", "antfu", "unocss", "Pinia"],
   /**
    * 解决 unocss @apply 警告问题
    * @see https://github.com/tailwindlabs/tailwindcss/discussions/5258#discussioncomment-1979394
