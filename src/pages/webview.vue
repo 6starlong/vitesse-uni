@@ -5,3 +5,7 @@ const { url } = defineProps<{ url: string }>()
 <template>
   <web-view :src="url" />
 </template>
+
+<route lang="yaml">
+layout: false
+</route>

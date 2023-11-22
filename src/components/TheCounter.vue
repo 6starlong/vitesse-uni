@@ -3,15 +3,15 @@ const { count, inc, dec } = $(useCountStore())
 </script>
 
 <template>
-  <div inline-flex m="y-3">
+  <view inline-flex m="y-3">
     <button rounded-full p-2 btn @click="dec()">
-      <div i-carbon-subtract />
+      <view i-carbon-subtract />
     </button>
-    <div font="mono" w="15" m-auto inline-block>
+    <view font="mono" w="15" m-auto inline-block>
       {{ count }}
-    </div>
+    </view>
     <button rounded-full p-2 btn @click="inc()">
-      <div i-carbon-add />
+      <view i-carbon-add />
     </button>
-  </div>
+  </view>
 </template>

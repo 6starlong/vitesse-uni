@@ -1,9 +1,8 @@
 {
   "extends": "@vue/tsconfig/tsconfig.json",
   "compilerOptions": {
-    "sourceMap": true,
-    "baseUrl": ".",
     "lib": ["DOM", "ESNext"],
+    "baseUrl": ".",
     "paths": {
       "~/*": ["src/*"],
       "@/*": ["src/*"]
@@ -14,8 +13,7 @@
       "@vue-macros/reactivity-transform/macros-global"
     ],
     "allowJs": true,
-    "strictNullChecks": true,
-    "noUnusedLocals": true
+    "sourceMap": true
   },
   "include": [
     "src/**/*.ts",

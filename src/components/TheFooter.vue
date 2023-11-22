@@ -1,14 +1,25 @@
-<template>
-  <div flex="~ x-center" mt-5 gap-4 text-xl>
-    <div title="Home" @click="router.replace('/pages/index')">
-      <div i-carbon-campsite icon-btn />
-    </div>
-    <div icon-btn title="GitHub" @click="router.push('https://github.com/6starlong/vitesse-uni')">
-      <div i-carbon-logo-github />
-    </div>
+<script setup lang="ts">
+function openGithub() {
+  const url = 'https://github.com/6starlong/vitesse-uni'
+  if (window)
+    window.open(url)
+  else
+    uni.navigateTo({ url: `/pages/webview?url=${url}` })
+}
+</script>
 
-    <div icon-btn title="Toggle dark mode" @click="toggleDark()">
-      <div i-carbon-sun dark:i-carbon-moon />
-    </div>
-  </div>
+<template>
+  <view flex="~ gap-4 x-center" mt-6 text-xl>
+    <navigator icon-btn title="Home" url="/pages/index" open-type="redirect">
+      <view i-carbon-campsite />
+    </navigator>
+
+    <view icon-btn title="GitHub" @click="openGithub">
+      <view i-carbon-logo-github />
+    </view>
+
+    <view icon-btn title="Toggle dark mode" @click="toggleDark()">
+      <view i-carbon-sun dark:i-carbon-moon />
+    </view>
+  </view>
 </template>

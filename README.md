@@ -2,18 +2,17 @@
   <img src='https://user-images.githubusercontent.com/36911513/250519667-0b07fd60-968d-4d81-9185-1e8ac421ab02.png' alt='Vitesse Uni - Opinionated Vite + UniApp Starter Template' width='800'/>
 </p>
 
+<h5 align='center'>
+<b><a href="https://github.com/antfu/vitesse">Vitesse</a> 的 uni-app 版本</b>
+</h5>
+
 <h6 align='center'>
 <a href="https://vitesse-uni.netlify.app/">在线 Demo</a>
 </h6>
 
-<h5 align='center'>
-<b>UniAPP 版的 <a href="https://github.com/antfu/vitesse">Vitesse</a></b>
-</h5>
-
-
 <br/>
 
-> 本模板相当于 Vitesse 的复刻，主要是为了兼容 [UniAPP](https://uniapp.dcloud.io/) 拥有更好的开发体验。如无跨端需求，建议使用 [Nuxt 3](https://nuxt.com/) 来代替。
+> 该模板主要是为了兼容 [uni-app](https://uniapp.dcloud.io/) 拥有更好的开发体验。如无跨端需求，建议使用 [Nuxt 3](https://nuxt.com/) 来代替。
 
 ## 特性
 
@@ -56,7 +55,6 @@
 ### UI 框架
 
 - [UnoCSS](https://github.com/antfu/unocss) - 高性能且极具灵活性的即时原子化 CSS 引擎
-- [uni-ui](https://github.com/dcloudio/uni-ui) - 基于 uni-app 的、全端兼容的、高性能 UI 框架。
 - [uv-ui](https://github.com/climblee/uv-ui) - uv-ui 破釜沉舟之兼容vue3+2、app、h5、小程序等多端基于uni-app和uView2.x的生态框架，支持单独导入，开箱即用，利剑出击。
 
 ### Icons
@@ -71,7 +69,6 @@
 - [`vite-plugin-uni-layouts`](https://github.com/uni-helper/vite-plugin-uni-layouts) - 页面布局系统
 - [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - 自动加载组件
 - [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 等，无需导入
-- [`unocss-applet`](https://github.com/unocss-applet/unocss-applet) - UnoCSS 兼容小程序预设
 - [`reactivity-transform`](https://vue-macros.sxzz.moe/features/reactivity-transform.html) - Vue Macros Reactivity Transform 独立包
 - [`vite-plugin-vue-devtools`](https://github.com/webfansplz/vite-plugin-vue-devtools) - 旨在增强Vue开发者体验的Vite插件
 
@@ -103,5 +100,5 @@
 ```bash
 npx degit 6starlong/vitesse-uni my-uni-app
 cd my-uni-app
-pnpm i # 如果你没装过 pnpm, 可以先运行: npm install -g pnpm
+pnpm i # 如果你没装过 pnpm, 运行: npm install -g pnpm
 ```

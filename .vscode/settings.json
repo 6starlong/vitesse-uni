@@ -1,19 +1,38 @@
 {
+  "cSpell.words": ["vitesse", "antfu", "unocss", "Pinia"],
+
   // Enable the ESlint flat config support
   "eslint.experimental.useFlatConfig": true,
 
+  // Disable the default formatter
   "prettier.enable": false,
   "editor.formatOnSave": false,
+
+  // Auto fix
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
+    "source.fixAll": "explicit",
+    "source.organizeImports": "never"
   },
-  "files.associations": {
-    "*.css": "postcss"
-  },
-  "cSpell.words": ["vitesse", "antfu", "unocss", "Pinia"],
-  /**
-   * 解决 unocss @apply 警告问题
-   * @see https://github.com/tailwindlabs/tailwindcss/discussions/5258#discussioncomment-1979394
-   */
+
+  // Silent the stylistic rules in you IDE, but still auto fix them
+  "eslint.rules.customizations": [
+    // { "rule": "style/*", "severity": "off" }
+  ],
+
+  // Enable eslint for all supported languages
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml"
+  ],
+
+  // Ignore scss @apply rule warnings
   "scss.lint.unknownAtRules": "ignore"
 }

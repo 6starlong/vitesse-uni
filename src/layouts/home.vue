@@ -1,15 +1,17 @@
 <template>
-  <div class="app" :class="{ dark: isDark }">
-    <main
+  <view class="app" :class="{ dark: isDark }">
+    <view
       p="x-4 y-10"
-      font-sans text="center"
-      color="gray-700 dark:gray-200"
+      font-sans
+      text="center gray-700 dark:gray-200"
     >
       <slot />
+
       <TheFooter />
-      <div mx-auto mt-4 text-center text-sm opacity-50>
+
+      <view mx-auto mt-4 text-center text-sm op50>
         [Home Layout]
-      </div>
-    </main>
-  </div>
+      </view>
+    </view>
+  </view>
 </template>

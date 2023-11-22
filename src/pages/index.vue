@@ -1,25 +1,31 @@
 <script setup lang="ts">
 const name = $ref('')
+const go = () => uni.navigateTo({ url: `/pages/hi?name=${name}` })
 </script>
 
 <template>
-  <div>
+  <view>
     <TheLogo />
 
-    <div py-4 />
+    <view py-4 />
 
-    <TheInput v-model:value="name" placeholder="输入你的名字" />
+    <TheInput
+      v-model:value="name"
+      placeholder="输入你的名字"
+      autocomplete="false"
+      @keydown.enter="go"
+    />
 
-    <div>
+    <view>
       <button
         m-3 text-sm btn
         :disabled="!name"
-        @click="router.push(`/pages/hi?name=${name}`)"
+        @click="go"
       >
         确认
       </button>
-    </div>
-  </div>
+    </view>
+  </view>
 </template>
 
 <route lang="yaml">
