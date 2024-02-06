@@ -79,9 +79,6 @@ devDependencies:
   '@dcloudio/vite-plugin-uni':
     specifier: 3.0.0-3090920231225001
     version: 3.0.0-3090920231225001(postcss@8.4.34)(vite@4.0.3)(vue@3.4.15)
-  '@iconify-json/carbon':
-    specifier: ^1.1.28
-    version: 1.1.28
   '@uni-helper/uni-app-types':
     specifier: ^0.5.12
     version: 0.5.12(typescript@5.3.3)
@@ -2745,12 +2742,6 @@ packages:
 
   /@humanwhocodes/object-schema@2.0.2:
     resolution: {integrity: sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==}
-    dev: true
-
-  /@iconify-json/carbon@1.1.28:
-    resolution: {integrity: sha512-tg+h0i+69JrIqUpQva2Mt611KdLMeCyibqS7lIqaMRXJgnalHtdqDcdZAKCSLb/hTbkJHyk0NCpQSYJ3f/v51w==}
-    dependencies:
-      '@iconify/types': 2.0.0
     dev: true
 
   /@iconify/types@2.0.0:

@@ -70,7 +70,6 @@
     "@dcloudio/uni-cli-shared": "3.0.0-3090920231225001",
     "@dcloudio/uni-stacktracey": "3.0.0-3090920231225001",
     "@dcloudio/vite-plugin-uni": "3.0.0-3090920231225001",
-    "@iconify-json/carbon": "^1.1.28",
     "@uni-helper/uni-app-types": "^0.5.12",
     "@uni-helper/unocss-preset-uni": "^0.2.6",
     "@uni-helper/vite-plugin-uni-layouts": "^0.1.7",

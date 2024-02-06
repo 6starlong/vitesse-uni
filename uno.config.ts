@@ -2,6 +2,27 @@ import { defineConfig, presetIcons, transformerDirectives, transformerVariantGro
 import { presetUni } from '@uni-helper/unocss-preset-uni'
 
 export default defineConfig({
+  presets: [
+    // https://github.com/uni-helper/unocss-preset-uni
+    presetUni({
+      remRpx: { mode: 'rem2rpx' }, // 1:8
+      uno: {
+        dark: 'class',
+      },
+    }),
+    presetIcons({
+      scale: 1.2,
+      extraProperties: {
+        'display': 'inline-block',
+        'vertical-align': 'middle',
+      },
+      cdn: 'https://esm.sh/',
+    }),
+  ],
+  transformers: [
+    transformerDirectives(), // 启用 @apply 功能
+    transformerVariantGroup(), // 启用 () 分组功能
+  ],
   // https://unocss.dev/config/shortcuts
   shortcuts: [
     // 布局
@@ -16,20 +37,6 @@ export default defineConfig({
     // 底部安全区域
     [/^(bottom|mb|pb)-safe(?:-(\d+))?$/, ([n]) => handleBottomSafeArea(n)],
   ],
-  presets: [
-    // https://github.com/uni-helper/unocss-preset-uni
-    presetUni({
-      remRpx: { mode: 'rem2rpx' } // 1:8
-    }),
-    presetIcons({
-      scale: 1.2,
-      warn: true,
-    })
-  ],
-  transformers: [
-    transformerDirectives(), // 启用 @apply 功能
-    transformerVariantGroup(), // 启用 () 分组功能
-  ]
 })
 
 // 处理底部安全区域
