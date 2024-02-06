@@ -11,7 +11,7 @@ interface NavigateToOptions {
 interface RedirectToOptions extends NavigateToOptions {}
 
 interface SwitchTabOptions {
-  
+
 }
 
 type ReLaunchOptions = NavigateToOptions | SwitchTabOptions;
@@ -21,4 +21,5 @@ declare interface Uni {
   redirectTo(options: UniNamespace.RedirectToOptions & RedirectToOptions): void;
   switchTab(options: UniNamespace.SwitchTabOptions & SwitchTabOptions): void;
   reLaunch(options: UniNamespace.ReLaunchOptions & ReLaunchOptions): void;
+  $uv: any;
 }
