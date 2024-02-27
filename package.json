@@ -40,6 +40,7 @@
     "test": "vitest",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
+    "up": "npx taze major --exclude pinia -w && npx @dcloudio/uvm@latest",
     "preinstall": "npx only-allow pnpm",
     "postinstall": "npx simple-git-hooks"
   },
@@ -76,7 +77,7 @@
     "@uni-helper/vite-plugin-uni-pages": "^0.2.14",
     "@unocss/eslint-config": "^0.58.5",
     "@vue-macros/reactivity-transform": "^0.4.3",
-    "@vue/runtime-core": "^3.4.15",
+    "@vue/runtime-core": "^3.2.45",
     "@vue/tsconfig": "^0.5.1",
     "eslint": "^8.56.0",
     "eslint-plugin-format": "^0.1.0",

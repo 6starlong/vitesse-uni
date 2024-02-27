@@ -98,7 +98,7 @@ devDependencies:
     specifier: ^0.4.3
     version: 0.4.3(vue@3.4.15)
   '@vue/runtime-core':
-    specifier: ^3.4.15
+    specifier: ^3.2.45
     version: 3.4.15
   '@vue/tsconfig':
     specifier: ^0.5.1
