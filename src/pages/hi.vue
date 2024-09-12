@@ -13,7 +13,7 @@ const back = () => uni.navigateBack()
       <text>动态路由演示</text>
     </view>
 
-    <view m="3">
+    <view m3>
       <TheCounter />
     </view>
 
@@ -28,7 +28,10 @@ const back = () => uni.navigateBack()
   </view>
 </template>
 
-<route lang="yaml">
-style:
-  navigationBarTitleText: Hi
+<route lang="json">
+{
+  "style": {
+    "navigationBarTitleText": "Hi"
+  }
+}
 </route>

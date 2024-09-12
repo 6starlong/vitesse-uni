@@ -13,5 +13,5 @@
 
 button.btn[disabled],
 button[btn][disabled] {
-  @apply: text-white! bg-gray-700! opacity-50;
+  @apply text-white! bg-gray-700! opacity-50;
 }

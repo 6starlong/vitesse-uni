@@ -1,14 +1,11 @@
-/// <reference types="vitest" />
-
-import { resolve } from 'node:path'
-import { defineConfig } from 'vite'
-import uni from '@dcloudio/vite-plugin-uni'
-import UniPages from '@uni-helper/vite-plugin-uni-pages'
+import path from 'node:path'
+import Uni from '@dcloudio/vite-plugin-uni'
 import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
+import UniPages from '@uni-helper/vite-plugin-uni-pages'
+import ReactivityTransform from '@vue-macros/reactivity-transform/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
-import ReactivityTransform from '@vue-macros/reactivity-transform/vite'
-// import Unocss from 'unocss/vite'
+import { defineConfig } from 'vite'
 import VueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vitejs.dev/config/
@@ -22,7 +19,7 @@ export default defineConfig(async () => {
   return {
     resolve: {
       alias: {
-        '~/': `${resolve(__dirname, 'src')}/`,
+        '~/': `${path.resolve(__dirname, 'src')}/`,
       },
     },
     plugins: [
@@ -58,7 +55,7 @@ export default defineConfig(async () => {
       ReactivityTransform(),
 
       // https://github.com/dcloudio/uni-app
-      uni(),
+      Uni(),
 
       // https://github.com/unocss/unocss
       UnoCSS(),

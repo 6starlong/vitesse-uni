@@ -28,6 +28,6 @@ const go = () => uni.navigateTo({ url: `/pages/hi?name=${name}` })
   </view>
 </template>
 
-<route lang="yaml">
-layout: home
+<route type="home" lang="json">
+{}
 </route>

@@ -4,7 +4,7 @@ import logo from '~/static/logo.png'
 
 <template>
   <view>
-    <view flex="~ x-center" mb-3>
+    <view mb-3 flex justify-center>
       <view flex="~ col">
         <view h-18 w-18 flex="~ center">
           <image h-15 w-15 :src="logo" />

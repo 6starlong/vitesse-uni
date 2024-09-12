@@ -1,8 +1,7 @@
 <template>
   <view class="app" :class="{ dark: isDark }">
     <view
-      p="x-4 y-10"
-      font-sans
+      p="x-10 y-20"
       text="center gray-700 dark:gray-200"
     >
       <slot />

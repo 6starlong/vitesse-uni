@@ -3,17 +3,14 @@ import { defineUniPages } from '@uni-helper/vite-plugin-uni-pages'
 export default defineUniPages({
   pages: [],
   globalStyle: {
-    'backgroundColor': '@bgColor',
-    'backgroundColorBottom': '@bgColorBottom',
-    'backgroundColorTop': '@bgColorTop',
-    'backgroundTextStyle': '@bgTxtStyle',
-    'navigationBarBackgroundColor': '@navBgColor',
-    'navigationBarTextStyle': '@navTxtStyle',
-    'navigationBarTitleText': 'vitesse-uni',
-    // 'navigationStyle': 'custom',
-    'app-plus': {
-      titleNView: false // 移除 H5、APP 顶部导航
-    },
+    backgroundColor: '@bgColor',
+    backgroundColorBottom: '@bgColorBottom',
+    backgroundColorTop: '@bgColorTop',
+    backgroundTextStyle: '@bgTxtStyle',
+    navigationBarBackgroundColor: '@navBgColor',
+    navigationBarTextStyle: '@navTxtStyle',
+    navigationBarTitleText: 'vitesse-uni',
+    navigationStyle: 'custom',
   },
   easycom: {
     autoscan: true,

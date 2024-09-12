@@ -1,3 +1,3 @@
 <script setup lang="ts">
-console.info('uv-ui-tools', uni.$uv)
+// At least one <template> or <script> is required in a single file component.
 </script>

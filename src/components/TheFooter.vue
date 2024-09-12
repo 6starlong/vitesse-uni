@@ -9,7 +9,7 @@ function openGithub() {
 </script>
 
 <template>
-  <view flex="~ gap-4 x-center" mt-6 text-xl>
+  <view flex="~ gap-4" mt-6 justify-center text-xl>
     <navigator icon-btn title="Home" url="/pages/index" open-type="redirect">
       <view i-carbon-campsite />
     </navigator>

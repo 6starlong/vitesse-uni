@@ -5,6 +5,9 @@
   "versionName": "1.0.0",
   "versionCode": "100",
   "transformPx": false,
+  "uniStatistics": {
+    "enable": false
+  },
   "app-plus": {
     "usingComponents": true,
     "nvueStyleCompiler": "uni-app",
@@ -41,6 +44,10 @@
     }
   },
   "h5": {
+    "router": {
+      "mode": "history",
+      "base": ""
+    },
     "darkmode": true,
     "themeLocation": "theme.json"
   },
@@ -62,9 +69,6 @@
   },
   "mp-toutiao": {
     "usingComponents": true
-  },
-  "uniStatistics": {
-    "enable": false
   },
   "vueVersion": "3"
 }
