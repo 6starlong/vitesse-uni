@@ -40,6 +40,7 @@ export default defineConfig(async () => {
         dts: 'src/auto-imports.d.ts',
         dirs: [
           './src/composables',
+          './src/server',
           './src/stores',
         ],
         vueTemplate: true,

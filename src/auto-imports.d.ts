@@ -74,6 +74,7 @@ declare global {
   const toValue: typeof import('vue')['toValue']
   const toggleDark: typeof import('./composables/useDark')['toggleDark']
   const triggerRef: typeof import('vue')['triggerRef']
+  const un: typeof import('./server/index')['un']
   const unref: typeof import('vue')['unref']
   const useAttrs: typeof import('vue')['useAttrs']
   const useCountStore: typeof import('./stores/count')['useCountStore']
@@ -165,6 +166,7 @@ declare module 'vue' {
     readonly toValue: UnwrapRef<typeof import('vue')['toValue']>
     readonly toggleDark: UnwrapRef<typeof import('./composables/useDark')['toggleDark']>
     readonly triggerRef: UnwrapRef<typeof import('vue')['triggerRef']>
+    readonly un: UnwrapRef<typeof import('./server/index')['un']>
     readonly unref: UnwrapRef<typeof import('vue')['unref']>
     readonly useAttrs: UnwrapRef<typeof import('vue')['useAttrs']>
     readonly useCountStore: UnwrapRef<typeof import('./stores/count')['useCountStore']>
