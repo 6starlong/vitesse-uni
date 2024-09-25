@@ -1,6 +1,5 @@
 import path from 'node:path'
 import Uni from '@dcloudio/vite-plugin-uni'
-import UniLayouts from '@uni-helper/vite-plugin-uni-layouts'
 import UniPages from '@uni-helper/vite-plugin-uni-pages'
 import ReactivityTransform from '@vue-macros/reactivity-transform/vite'
 import AutoImport from 'unplugin-auto-import/vite'
@@ -27,9 +26,6 @@ export default defineConfig(async () => {
       UniPages({
         dts: 'src/uni-pages.d.ts',
       }),
-
-      // https://github.com/uni-helper/vite-plugin-uni-layouts
-      UniLayouts(),
 
       // https://github.com/unplugin/unplugin-auto-import
       AutoImport({
@@ -64,9 +60,5 @@ export default defineConfig(async () => {
       // https://github.com/webfansplz/vite-plugin-vue-devtools
       VueDevTools(),
     ],
-    // https://github.com/vitest-dev/vitest
-    test: {
-      environment: 'jsdom',
-    },
   }
 })

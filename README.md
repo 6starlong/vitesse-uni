@@ -22,8 +22,6 @@
 
 - 📦 [组件自动化加载](https://github.com/6starlong/vitesse-uni/blob/main/src/components)
 
-- 📑 [布局系统](https://github.com/6starlong/vitesse-uni/tree/main/src/layouts)
-
 - 🍍 [使用 Pinia 的状态管理](https://pinia.vuejs.org)
 
 - 🎨 [UnoCSS](https://github.com/unocss/unocss) - 高性能且极具灵活性的即时原子化 CSS 引擎
@@ -34,17 +32,16 @@
 
 - 📥 [API 自动导入](https://github.com/6starlong/vitesse-uni/tree/master/src/composables) - 直接使用 Composition API 等
 
-- ✅ 使用 [Vitest](https://vitest.dev/) 进行单元测试
-
 - 🦾 TypeScript, 当然
 
 - 🔒︎ [锁 pnpm 包管理](https://pnpm.io/only-allow-pnpm)
 
 - ☁️ 零配置部署 [Netlify](https://www.netlify.com/)
 
-## 从 [vitesse-lite](https://github.com/antfu/vitesse-lite) 中删除了以下特性
+## 从 [vitesse-uni](https://github.com/6starlong/vitesse-uni) 中删除了以下特性
 
-- ~~VueUse~~
+- ~~Layouts~~
+- ~~Vitest~~
 
 ## 预配置
 
@@ -62,7 +59,6 @@
 
 - [`Pinia`](https://pinia.vuejs.org) - 直接的, 类型安全的, 使用 Composition API 的轻便灵活的 Vue 状态管理
 - [`vite-plugin-uni-pages`](https://github.com/uni-helper/vite-plugin-uni-pages) - 以文件系统为基础的路由
-- [`vite-plugin-uni-layouts`](https://github.com/uni-helper/vite-plugin-uni-layouts) - 页面布局系统
 - [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - 自动加载组件
 - [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 等，无需导入
 - [`reactivity-transform`](https://vue-macros.sxzz.moe/features/reactivity-transform.html) - Vue Macros Reactivity Transform 独立包
@@ -76,7 +72,6 @@
 ### 开发工具
 
 - [TypeScript](https://www.typescriptlang.org/)
-- [Vitest](https://github.com/vitest-dev/vitest) - 基于 Vite 的单元测试框架
 - [pnpm](https://pnpm.js.org/) - 快, 节省磁盘空间的包管理器
 - [Netlify](https://www.netlify.com/) - 零配置的部署
 - [VS Code 扩展](./.vscode/extensions.json)
@@ -96,7 +91,7 @@
 如果您更喜欢使用更干净的 git 历史记录手动执行此操作
 
 ```bash
-npx degit 6starlong/vitesse-uni my-uni-app
+npx degit 6starlong/vitesse-uni#lite my-uni-app
 cd my-uni-app
 pnpm i # 如果你没装过 pnpm, 运行: npm install -g pnpm
 ```
