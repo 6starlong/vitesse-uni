@@ -42,13 +42,9 @@
 
 - ☁️ 零配置部署 [Netlify](https://www.netlify.com/)
 
-## 从 [Vitesse](https://github.com/antfu/vitesse) 中删除了以下特性
+## 从 [vitesse-lite](https://github.com/antfu/vitesse-lite) 中删除了以下特性
 
-- ~~i18n~~
 - ~~VueUse~~
-- ~~SSG~~
-- ~~PWA~~
-- ~~Markdown~~
 
 ## 预配置
 
@@ -87,6 +83,7 @@
   - [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) - Vue 3 `<script setup>` IDE 支持
   - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify) - 图标内联显示和自动补全
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+  - [uni-helper-vscode](https://uni-helper.js.org/uni-helper-vscode)
 
 ## 现在可以试试!
 

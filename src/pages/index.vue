@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const name = $ref('')
-const go = () => uni.navigateTo({ url: `/pages/hi?name=${name}` })
+const router = useRouter()
+const go = () => router.push({ url: `/pages/hi?name=${name}` })
 </script>
 
 <template>

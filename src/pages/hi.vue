@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const props = defineProps<{ name: string }>()
-const back = () => uni.navigateBack()
+const router = useRouter()
 </script>
 
 <template>
@@ -20,7 +20,7 @@ const back = () => uni.navigateBack()
     <view>
       <button
         mt-3 text-sm btn
-        @click="back"
+        @click="router.back()"
       >
         返回
       </button>
