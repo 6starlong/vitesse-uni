@@ -1,5 +1,12 @@
 export const isDark = useDark()
-export const toggleDark = () => isDark.value = !isDark.value
+
+export function toggleDark() {
+  isDark.value = !isDark.value
+  uni.setNavigationBarColor({
+    frontColor: isDark.value ? '#ffffff' : '#000000',
+    backgroundColor: isDark.value ? '#292929' : '#f8f8f8',
+  })
+}
 
 function useDark() {
   const darkMode = ref(false)

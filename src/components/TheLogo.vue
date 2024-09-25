@@ -12,10 +12,8 @@ import logo from '~/static/logo.png'
         <text>uni-app</text>
       </view>
       <view
-        text="3xl gray-4"
-        m="x-4 y-auto"
-        i-carbon-add
-        transform transition-all-500 hover:rotate-135
+        text="3xl gray-4" m="x-4 y-auto" i-carbon-add
+        class="transform transition-all-500 hover:rotate-135"
       />
       <view flex="~ col">
         <view i-carbon-campsite inline-block text-6xl />
