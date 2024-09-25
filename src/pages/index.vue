@@ -29,6 +29,8 @@ const go = () => router.push({ url: `/pages/hi?name=${name}` })
   </view>
 </template>
 
-<route type="home" lang="json">
-{}
+<route lang="json">
+{
+  "layout": "home"
+}
 </route>
