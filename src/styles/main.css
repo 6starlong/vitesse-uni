@@ -1,7 +1,11 @@
 @import './tailwind.css';
 
+page {
+  height: 100%;
+}
+
 .app {
-  min-height: 100vh;
+  min-height: 100%;
   color: #000000;
   background: #ffffff;
 }
