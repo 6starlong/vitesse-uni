@@ -14,8 +14,8 @@ export default defineConfig({
     ['flex-center', 'flex justify-center items-center'],
 
     // 按钮
-    ['btn', 'inline-block cursor-pointer rounded bg-teal-700 px-4 py-1 text-white lh-none disabled:cursor-default disabled:bg-gray-600 hover:bg-teal-800 disabled:opacity-50 !outline-none'],
-    ['icon-btn', 'inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-teal-600'],
+    ['btn', 'inline-block rounded bg-teal-700 px-4 py-1 text-white lh-none outline-none duration-200 hover:bg-teal-800 after:content-none'],
+    ['icon-btn', 'inline-block cursor-pointer opacity-75 transition duration-200 ease-in-out hover:(text-teal-600 opacity-100)'],
   ],
   presets: [
     presetUni(),
